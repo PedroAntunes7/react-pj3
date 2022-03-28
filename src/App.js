@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          My First Project
+          Alterei No Git
         </p>
         <a
           className="App-link"
