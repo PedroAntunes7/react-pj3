@@ -4,7 +4,6 @@ const Nav = () => {
   return (
     
     <div className = "topicos">
-      <img src="#" alt="Logo"></img>
       <p>Classificados</p>
       <p> Duvidas</p>
       <p>Praias</p>
