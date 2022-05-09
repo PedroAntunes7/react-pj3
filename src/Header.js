@@ -2,6 +2,8 @@ import LogoNav from "./logo"
 import Navbar from "./Navbar"
 import './header.css'
 import ButtonNav from "./ButtonNav"
+import Fundo from "./Fundo"
+import Footer from "./Footer"
 
 
 
@@ -9,14 +11,13 @@ import ButtonNav from "./ButtonNav"
 const Header = () => {
     return(
      <>
-     <div className="pasa">
-      <div>
+     <div className="container">
             <LogoNav />
             <Navbar />
-            
             <ButtonNav />
-     </div>
-     </div>
+       </div>
+            <Fundo />
+       <Footer />
      </>
     )
 }

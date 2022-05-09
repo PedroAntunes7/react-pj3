@@ -1,0 +1,18 @@
+* {
+    list-style: none;
+}
+
+.tudo{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+.direita {
+    display: flex;
+
+}
+
+.esquerda{
+    display: flex;
+}

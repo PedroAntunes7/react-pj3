@@ -1,5 +1,10 @@
-.pasa {
+.container {
     display: flex;
     align-items: center;
-    background-color: rgb(26, 106, 106);
+    background-color: rgb(221, 218, 218);
+    justify-content: space-around;
+}
+
+.adjust {
+    display: flex;
 }
