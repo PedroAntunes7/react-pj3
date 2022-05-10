@@ -1,10 +1,10 @@
 import './app.css'
-import Header from './Header';
+import Layout from './pages/LayoutDefault'
 
 function App() {
   return (
     <>
-   < Header />
+   < Layout />
     </>
 
 

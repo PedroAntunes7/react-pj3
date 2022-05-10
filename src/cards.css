@@ -1,0 +1,28 @@
+.texto-direita{
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    width: 332px;
+    margin: 0 15px 15px 0;
+
+}
+
+.texto-esquerda{
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    width: 332px;
+    margin: 0 15px 15px 0;
+
+
+}
+
+.lala {
+    display: flex;
+}

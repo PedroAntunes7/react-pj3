@@ -1,10 +1,11 @@
-import "./buttonnav.css"
+import { Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ButtonNav = () => {
     return(
         <>  
         
-        <button>Anuncie Aqui</button>
+        <Button variant="secondary">Secondary</Button>{' '}
 
         </>
     )
