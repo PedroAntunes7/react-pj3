@@ -1,4 +1,12 @@
 .listausers{
     display: flex;
     flex-wrap: wrap;
+
+
+    background-color: rgb(194, 194, 194);
+}
+
+.data-id{
+    display: flex;
+    flex-direction: column;
 }

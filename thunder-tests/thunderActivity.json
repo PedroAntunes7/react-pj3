@@ -26,5 +26,69 @@
       ]
     },
     "tests": []
+  },
+  {
+    "_id": "4b8921e2-6594-4c1a-81c0-4f03a929251c",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost/lp2/api/user/create",
+    "url": "http://localhost/lp2/api/user/create",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-05-30T20:05:01.949Z",
+    "modified": "2022-05-30T20:05:02.026Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "name",
+          "value": "Pedro02"
+        },
+        {
+          "name": "email",
+          "value": "pedro02@gmail.com"
+        },
+        {
+          "name": "pass",
+          "value": "123123"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "58c2ee18-ec8c-4416-aec6-6f11ec51ab10",
+    "colId": "history",
+    "containerId": "",
+    "name": "https://localhost/lp2/api/user/create",
+    "url": "http://localhost/lp2/api/user/create",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-05-30T20:05:10.383Z",
+    "modified": "2022-05-30T20:08:12.381Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "name",
+          "value": "Pedro02"
+        },
+        {
+          "name": "email",
+          "value": "pedro02@gmail.com"
+        },
+        {
+          "name": "pass",
+          "value": "123123"
+        }
+      ]
+    },
+    "tests": []
   }
 ]

@@ -22,13 +22,17 @@ const Menu = () => {
         <NavLink style={{margin: '0 0 0 10px'}} to="images/icon">Contatos</NavLink>  
         { isLogged 
           ? (
-              <>
+            <>
                 <span>Logado como: {userLogged.email}</span> 
                 <button onClick={logout}>Sair</button>
               </>
           )
           : (<span><Link to="admin/login">Login Admin</Link></span>)
         }
+        <div className='anuncie'>
+        <button>Anuncie Aqui!</button>
+        </div>
+
         
     </div>
 

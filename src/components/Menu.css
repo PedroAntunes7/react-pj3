@@ -1,5 +1,7 @@
 .menu{
     background: #000;
+    display: flex;
+    align-items: center;
 }
 .menu a{
     text-decoration: none;
@@ -12,4 +14,9 @@
 .menu span{
     color: #ffffff;
     margin: 0 0 0 20px; 
+}
+
+.anuncie{
+    display: flex;
+    padding-left: 43%;
 }

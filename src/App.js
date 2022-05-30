@@ -13,7 +13,7 @@ import LayoutDefault from './pages/LayoutDefault';
 import LayoutDashboard from './pages/LayoutDashboard';
 import AuthProvider from './providers/authProvider'
 import Login from './components/Login';
-import Imgmain from './components/ImgMain';
+
 
 
 function App() {
