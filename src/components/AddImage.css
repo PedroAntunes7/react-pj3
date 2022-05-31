@@ -1,3 +1,8 @@
 .bgimagens{
     background: url('../assets/img/textura.jfif');
 }
+
+.imgmain{
+    width: auto;
+    max-width: 100%;
+}

@@ -4,6 +4,8 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import headConfig from '../helpers/headConfig';
 import Imgmain from './ImgMain';
+import Cardhome from '../components/Cardhome'
+import './excontexto.css'
 
 const ExemploContexto = () => { 
   useEffect(() => {
@@ -22,6 +24,10 @@ const ExemploContexto = () => {
     return (
       <>
       <Imgmain />
+      <div  className='textocards'>
+      <h1>Ofertas Semanais</h1>
+      </div>
+      <Cardhome />
         <Button variant="success" onClick={handleShow}>Open Modal</Button>
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>

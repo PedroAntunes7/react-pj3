@@ -6,7 +6,7 @@ const AddImage = () => {
   return (
     <div className="imgmain">
         {/* Usando imagens svg como componentes */} 
-        <Imgmain alt="Logo React" width="" height="" />
+        <Imgmain alt="Logo React" />
     </div>
   );
 }

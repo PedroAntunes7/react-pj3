@@ -3,6 +3,7 @@ import { NavLink, Link } from 'react-router-dom'
 import './Menu.css'
 import { useAuth } from '../providers/authProvider'
 
+
 const Menu = () => {
 
   const {isLogged, userLogged, setIsLogged, setUserLogged} = useAuth();
@@ -15,11 +16,24 @@ const Menu = () => {
 
   return (
     <div className='menu'>
-        Menu: <NavLink to="/">Home</NavLink> 
-        <NavLink end style={{margin: '0 0 0 10px'}} to="images">Classificados</NavLink> 
-        <NavLink style={{margin: '0 0 0 10px'}} to="props">Duvidas</NavLink> 
-        <NavLink style={{margin: '0 0 0 10px'}} to="children">Praias</NavLink> 
-        <NavLink style={{margin: '0 0 0 10px'}} to="images/icon">Contatos</NavLink>  
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+      <NavLink to="/">Home</NavLink>
+      </li>
+      <li class="nav-item">
+      <NavLink style={{margin: '0 0 0 10px'}} to="props">Duvidas</NavLink> 
+      </li>
+      <li class="nav-item">
+      <NavLink style={{margin: '0 0 0 10px'}} to="children">Praias</NavLink>
+      </li>
+      <li class="nav-item">
+      <NavLink style={{margin: '0 0 0 10px'}} to="images/icon">Contatos</NavLink>
         { isLogged 
           ? (
             <>
@@ -29,10 +43,10 @@ const Menu = () => {
           )
           : (<span><Link to="admin/login">Login Admin</Link></span>)
         }
-        <div className='anuncie'>
-        <button>Anuncie Aqui!</button>
-        </div>
-
+      </li>
+    </ul>
+  </div>
+</nav>
         
     </div>
 
