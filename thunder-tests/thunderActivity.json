@@ -90,5 +90,69 @@
       ]
     },
     "tests": []
+  },
+  {
+    "_id": "9330dc52-0609-4168-b9a2-38ed001cd998",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost/lp2/api/boat/update",
+    "url": "http://localhost/lp2/api/boat/update",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-06-06T19:52:07.270Z",
+    "modified": "2022-06-06T19:52:07.381Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "name",
+          "value": "seadoo"
+        },
+        {
+          "name": "price",
+          "value": "30.000.00R$"
+        },
+        {
+          "name": "img",
+          "value": "https://cdn4.buysellads.net/uu/1/118579/1653600494-1653598537-CRL-Build-Serverless-Display-Ads-D-260x200.png"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "8e559e55-5736-44da-90c8-b8223bff2330",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost/lp2/api/boat/update",
+    "url": "http://localhost/lp2/api/boat/update",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-06-06T19:52:24.004Z",
+    "modified": "2022-06-06T19:52:24.901Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "name",
+          "value": "seadoo"
+        },
+        {
+          "name": "price",
+          "value": "30.000.00R$"
+        },
+        {
+          "name": "img",
+          "value": "https://cdn4.buysellads.net/uu/1/118579/1653600494-1653598537-CRL-Build-Serverless-Display-Ads-D-260x200.png"
+        }
+      ]
+    },
+    "tests": []
   }
 ]

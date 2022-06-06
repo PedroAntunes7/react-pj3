@@ -6,6 +6,7 @@ import headConfig from '../helpers/headConfig';
 import Imgmain from './ImgMain';
 import Cardhome from '../components/Cardhome'
 import './excontexto.css'
+import Cardsobre from '../components/Cardsobre'
 
 const ExemploContexto = () => { 
   useEffect(() => {
@@ -28,6 +29,7 @@ const ExemploContexto = () => {
       <h1>Ofertas Semanais</h1>
       </div>
       <Cardhome />
+      <Cardsobre />
         <Button variant="success" onClick={handleShow}>Open Modal</Button>
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>

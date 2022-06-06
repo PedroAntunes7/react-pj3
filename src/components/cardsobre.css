@@ -1,0 +1,13 @@
+
+
+.sobre  {
+width: 100%;
+height: 100%;
+border: 1px solid black;
+color: rgb(0, 0, 0);
+
+}
+
+.sobre p {
+    text-overflow: clip ellipsis;
+}

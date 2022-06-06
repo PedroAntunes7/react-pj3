@@ -3,8 +3,8 @@ import { useParams, useNavigate } from 'react-router-dom'
 
 const EditUserOnChange = () => {
 
-    const { userId } = useParams()
-    const [user, setUser] = useState()
+    const { boatId } = useParams()
+    const [boat, setBoat] = useState()
     const navigate = useNavigate()
 
     // const clearUserValue = {
@@ -14,7 +14,7 @@ const EditUserOnChange = () => {
     // }
 
     useEffect(() => {
-        fetch(`http://localhost/lp2/api/user/select-by-id/?id=${userId}`)
+        fetch(`http://localhost/lp2/api/boat/select-by-id/?id=${boatId}`)
             .then((response) => {
                 if (response.ok) {
                   return response.json();
@@ -25,22 +25,22 @@ const EditUserOnChange = () => {
             .catch((error) => {
                 console.log(error);
             })
-    }, [userId]);
+    }, [boatId]);
   
     const handleSubmit = (event) => {
         event.preventDefault()
         const formData = new FormData()
-        formData.append('id', userId)
+        formData.append('id', boatId)
         formData.append('name', event.target[0].value)
-        formData.append('email', event.target[1].value)
-        formData.append('pass', event.target[2].value)
+        formData.append('price', event.target[1].value)
+        formData.append('img', event.target[2].value)
         fetch(
             "http://localhost/lp2/api/user/update",
             {method: 'POST', body: formData}
             )
             .then((response) => response.json())
             .then((data) => {
-                if(data?.user?.id){
+                if(data?.boat?.id){
                     navigate('../');
                     //setUser(clearUserValue)
                 } else if(data?.message){
@@ -53,21 +53,21 @@ const EditUserOnChange = () => {
     
     const handleChange = (event) => {
         const {name, value} = event.target
-        setUser({...user, [name]: value})
+        setUser({...boat, [name]: value})
     } 
   
     return (
         <>
-        {user ? (
+        {boat ? (
             <form onSubmit={(event) => handleSubmit(event)}>
-                <label>Nome:</label><input type="text" name="name" value={user.name} onChange={handleChange} />
-                <label>Email:</label><input type="email" name="email"  value={user.email} onChange={handleChange} />
-                <label>Senha:</label><input type="password" name="pass"  value={user.pass} onChange={handleChange} />
+                <label>Nome:</label><input type="text" name="name" value={boat.name} onChange={handleChange} />
+                <label>Preço:</label><input type="email" name="email"  value={boat.email} onChange={handleChange} />
+                <label>Imagem:</label><input type="text" name="img"  value={boat.img} onChange={handleChange} />
                 <input type="submit" value="Editar" />
             </form>
             )
         : 
-            (<p>Usuário não encontrado!</p>)
+            (<p>Barco não encontrado!</p>)
         }
         </>
     )

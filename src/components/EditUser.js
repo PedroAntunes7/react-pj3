@@ -3,30 +3,30 @@ import { useParams, useNavigate } from 'react-router-dom'
 
 const EditUser = () => {
 
-    const { userId } = useParams();
-    const [user, setUser] = useState();
+    const { boatId } = useParams();
+    const [boat, setBoat] = useState();
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch("http://localhost/lp2/api/user/select-by-id/?id="+userId)
+        fetch("http://localhost/lp2/api/boat/select-by-id/?id="+boatId)
             .then((response) => response.json())
-            .then((data) => setUser(data));
-    }, [userId]);
+            .then((data) => setBoat(data));
+    }, [boatId]);
   
     const handleSubmit = (event) => {
         event.preventDefault()
         const formData = new FormData()
-        formData.append('id', userId)
-        formData.append('name', event.target[0].value)
-        formData.append('email', event.target[1].value)
-        formData.append('pass', event.target[2].value)
+        formData.append('id', boatId)
+        formData.append('img', event.target[0].value)
+        formData.append('name', event.target[1].value)
+        formData.append('price', event.target[2].value)
         fetch(
-            "http://localhost/lp2/api/user/update",
+            "http://localhost/lp2/api/boat/update",
             {method: 'POST', body: formData}
             )
             .then((response) => response.json())
             .then((data) => {
-                if(data?.user?.id){
+                if(data?.boat?.id){
                     navigate('../');
                 } else if(data?.message){
                     alert(data.message)
@@ -38,19 +38,19 @@ const EditUser = () => {
   
     return (
         <>
-        {user ? (
+        {boat ? (
             <form onSubmit={(event) => handleSubmit(event)}>
-                <label>Nome:</label><input type="text" name="name" defaultValue={user.name} />
-                <label>Email:</label><input type="email" name="email"  defaultValue={user.email} />
-                <label>Senha:</label><input type="password" name="pass"  defaultValue={user.pass} />
+                <label>Nome:</label><input type="text" name="name" defaultValue={boat.name} />
+                <label>Preço:</label><input type="email" name="email"  defaultValue={boat.price} />
+                <label>Image:</label><input type="text" name="img"  defaultValue={boat.img} />
                 <input type="submit" value="Editar" />
             </form>
             )
         : 
-            (<p>Usuário não encontrado!</p>)
+            (<p>Barco não encontrado!</p>)
         }
         </>
     )
 }
 
-export default EditUser
+export default EditBoat
