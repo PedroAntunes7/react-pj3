@@ -27,7 +27,7 @@ const FormUser = ({boats, setBoats}) => {
         imgRef.current.value = ''
         nameRef.current.focus()
         //alert(data.message)
-        setUsers([data.boat, ...boats])
+        setBoats([data.boat, ...boats])
       });
   } 
 

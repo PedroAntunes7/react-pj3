@@ -21,7 +21,7 @@ const EditUserOnChange = () => {
                 }
                 throw new Error(response.statusText);
             })
-            .then((data) => setUser(data))
+            .then((data) => setBoat(data))
             .catch((error) => {
                 console.log(error);
             })
@@ -53,7 +53,7 @@ const EditUserOnChange = () => {
     
     const handleChange = (event) => {
         const {name, value} = event.target
-        setUser({...boat, [name]: value})
+        setBoat({...boat, [name]: value})
     } 
   
     return (

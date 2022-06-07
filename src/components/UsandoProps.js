@@ -4,6 +4,7 @@ import barco from "../assets/img/barco.jpg"
 function UsandoProps() {
   return (
     <>
+
       <section className="todoscards d-flex">
       <div className='row my-1'>
 

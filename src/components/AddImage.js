@@ -3,6 +3,7 @@ import "./AddImage.css"
 // importar imagens jpg, png , gif, svg, jpeg, webp
 import mountain from "../assets/img/mountain.webp"
 import logo from "../assets/img/react-logo.svg"
+
 // importar imagens svg como componentes
 import { ReactComponent as Logo } from "../assets/img/react-logo.svg"
 

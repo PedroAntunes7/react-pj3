@@ -3,12 +3,14 @@ import FilhoContexto from "./FilhoContexto";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import headConfig from '../helpers/headConfig';
-import Imgmain from './ImgMain';
 import Cardhome from '../components/Cardhome'
 import './excontexto.css'
-import Cardsobre from '../components/Cardsobre'
+import Imgmain from "../assets/img/imgmain.png"
+
+
 
 const ExemploContexto = () => { 
+
   useEffect(() => {
     headConfig({
       title: 'Home - Exemplo Contexto',
@@ -24,12 +26,11 @@ const ExemploContexto = () => {
   const handleShow = () => setShow(true);
     return (
       <>
-      <Imgmain />
+      <img src={Imgmain}></img>
       <div  className='textocards'>
       <h1>Ofertas Semanais</h1>
       </div>
       <Cardhome />
-      <Cardsobre />
         <Button variant="success" onClick={handleShow}>Open Modal</Button>
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
