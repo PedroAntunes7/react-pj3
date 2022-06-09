@@ -31,3 +31,7 @@ img{
 .todoscards img {
     border: 1px solid black;
 }
+
+.titulo{
+    border-top: 2px solid black;
+}

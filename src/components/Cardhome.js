@@ -21,7 +21,7 @@ return(
           <div key={boat.id} className="card mx-3">
            <Link to={"/Barco/"+boat.id}>
             <img className="barco" src={boat.img} alt={boat.name}/>
-            <h1 className="name">{boat.name}</h1>
+            <h1 className="name nameboats">{boat.name}</h1>
            </Link>
             <p className="price">({boat.price})</p>
           </div>

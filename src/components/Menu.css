@@ -1,9 +1,10 @@
 .menu{
-    background: rgb(43, 95, 172);
+    background: rgb(97, 95, 95);
     display: flex;
     align-items: center;
     height: 80px;
     font-size: 35px;
+    border-bottom: 2px solid black;
 }
 .menu a{
     text-decoration: none;
@@ -21,4 +22,9 @@
 .anuncie{
     display: flex;
     padding-left: 43%;
+}
+
+.imagemenu{
+  width: 8%;
+  height: 10%;
 }
