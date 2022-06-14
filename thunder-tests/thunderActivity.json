@@ -154,5 +154,75 @@
       ]
     },
     "tests": []
+  },
+  {
+    "_id": "0e1276c4-a3bb-4ab5-bde0-91447fdb44ac",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost/boat-api/api/boat/select-all",
+    "url": "http://localhost/boat-api/api/boat/select-all",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-06-14T20:45:02.120Z",
+    "modified": "2022-06-14T20:45:02.664Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "b0f4e760-7956-4fc0-8491-0977c0eb2412",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost/boat-api/api/boat/destaques",
+    "url": "http://localhost/boat-api/api/boat/destaques",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-06-14T20:45:09.308Z",
+    "modified": "2022-06-14T20:50:14.663Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "2f40be15-eab6-4714-91cb-09ac65060849",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost/boat-api/api/boat/destaque",
+    "url": "http://localhost/boat-api/api/boat/destaque",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-06-14T20:45:18.490Z",
+    "modified": "2022-06-14T20:45:18.503Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "ea9fd6c5-1a8b-45a7-9624-3937e6742fe1",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost/boat-api/api/boat/destaquesjho",
+    "url": "http://localhost/boat-api/api/boat/destaquesjho",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-06-14T20:46:44.992Z",
+    "modified": "2022-06-14T20:46:45.681Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "e3cfe1cb-74fb-422a-a9a5-00dbb217e202",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost/boat-api/api/boat/destaquesjhoijoij",
+    "url": "http://localhost/boat-api/api/boat/destaquesjhoijoij",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-06-14T20:46:47.086Z",
+    "modified": "2022-06-14T20:46:47.259Z",
+    "headers": [],
+    "params": [],
+    "tests": []
   }
 ]

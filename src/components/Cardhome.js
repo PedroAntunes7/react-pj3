@@ -18,7 +18,7 @@ return(
     {boats &&
       boats.map((boat) => {
         return (
-          <div key={boat.id} className="card mx-3">
+          <div key={boat.id } className="card mx-3">
            <Link to={"/Barco/"+boat.id}>
             <img className="barco" src={boat.img} alt={boat.name}/>
             <h1 className="name nameboats">{boat.name}</h1>
