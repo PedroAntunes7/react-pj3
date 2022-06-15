@@ -1,10 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AddImage from './components/AddImage';
 import ExemploContexto from './components/ExemploContexto';
-import UsandoProps from './components/UsandoProps'
+import Barcos from './components/Barcos'
 import LangProvider from './lang/LangProvider'
 import UsandoChildren from './components/UsandoChildren';
-import UsandoIcons from './components/UsandoIcons';
+import Contatos from './components/Contatos';
 import APIIntegration from './components/APIIntegration';
 import { Routes, Route } from "react-router-dom";
 import NotFound from './pages/NotFound'
@@ -13,6 +13,7 @@ import LayoutDefault from './pages/LayoutDefault';
 import LayoutDashboard from './pages/LayoutDashboard';
 import AuthProvider from './providers/authProvider'
 import Login from './components/Login';
+import Jets from './components/Jets'
 
 
 
@@ -24,11 +25,11 @@ function App() {
             <Routes>
               <Route path="/" element={<LayoutDefault />}>
                 <Route index element={<ExemploContexto/>} />
-                <Route path="props" element={<UsandoProps />} />
+                <Route path="Barcos" element={<Barcos />} />
+                <Route path="Jets" element={<Jets />} />
                 <Route path="children" element={<UsandoChildren />} />
-                <Route path="images">
-                  <Route index element={<AddImage />} />
-                  <Route path="icon" element={<UsandoIcons />} />
+                <Route path="Contatos"> <Route index element={<Contatos />} />
+                  <Route path="Contatos" element={<Contatos />} />
                 </Route>
               </Route>
 

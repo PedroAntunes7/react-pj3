@@ -1,14 +1,14 @@
-import './UsandoProps.css'
+import './Barcos.css'
 import "./Cardhome.css"
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom"
 
 
-const UsandoProps = () => {
+const Barcos = () => {
   const [boats, setBoats] = useState(null);
 
 useEffect(() => {
-    fetch("http://localhost/boat-api/api/boat/select-all")
+    fetch("http://localhost/boat-api/api/boat/select-All")
         .then((response) => response.json())
         .then((data) => setBoats(data));
 }, []);
@@ -38,4 +38,4 @@ return(
   }
 
   
-  export default UsandoProps
+ export default Barcos

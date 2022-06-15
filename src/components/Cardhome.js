@@ -8,7 +8,7 @@ const Cardhome = () => {
   const [boats, setBoats] = useState(null);
 
 useEffect(() => {
-    fetch("http://localhost/boat-api/api/boat/select-all")
+    fetch("http://localhost/boat-api/api/boat/destaques")
         .then((response) => response.json())
         .then((data) => setBoats(data));
 }, []);

@@ -1,22 +1,10 @@
-import {FaApple} from 'react-icons/fa'
-import { HiOutlineTrash } from "react-icons/hi";
+import FormContato from "./formcontato";
 
-const UsandoIcons = ({valor, children}) => {  
+
+const UsandoIcons = () => {  
     return (
         <>
-        <div className="d-flex justify-content-center my-3">
-           <h1 className='title'>Contatos</h1> 
-        </div>
-            <FaApple style={{
-                color: "#000",
-                width: '100px',
-                height: '100px'
-            }}/>
-            <HiOutlineTrash style={{
-                color: "#000",
-                width: '100px',
-                height: '100px'
-            }}/>
+      <FormContato />
         </>
     );
   }

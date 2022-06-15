@@ -1,3 +1,7 @@
+*{
+
+}
+
 .menu{
     background: rgb(97, 95, 95);
     display: flex;
@@ -27,3 +31,4 @@
 .imagemenu{
   width: 5%;
 }
+
