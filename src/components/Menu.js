@@ -46,7 +46,7 @@ const Menu = () => {
         </li>
 
         <li class="nav-item ">
-          <NavLink to="children" style={{margin: '0 0 0 10px'}}class="nav-link">Praias</NavLink>
+          <NavLink to="Praia" style={{margin: '0 0 0 10px'}}class="nav-link">Praias</NavLink>
         </li>
         <li class="nav-item">
           <NavLink to="Contatos" style={{margin: '0 0 0 10px'}} class="nav-link">Contatos</NavLink>

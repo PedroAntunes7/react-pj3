@@ -3,7 +3,7 @@ import AddImage from './components/AddImage';
 import ExemploContexto from './components/ExemploContexto';
 import Barcos from './components/Barcos'
 import LangProvider from './lang/LangProvider'
-import UsandoChildren from './components/UsandoChildren';
+import Praias from './components/Praias';
 import Contatos from './components/Contatos';
 import APIIntegration from './components/APIIntegration';
 import { Routes, Route } from "react-router-dom";
@@ -27,7 +27,7 @@ function App() {
                 <Route index element={<ExemploContexto/>} />
                 <Route path="Barcos" element={<Barcos />} />
                 <Route path="Jets" element={<Jets />} />
-                <Route path="children" element={<UsandoChildren />} />
+                <Route path="Praia" element={<Praias />} />
                 <Route path="Contatos"> <Route index element={<Contatos />} />
                   <Route path="Contatos" element={<Contatos />} />
                 </Route>

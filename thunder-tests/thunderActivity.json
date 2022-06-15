@@ -174,11 +174,11 @@
     "colId": "history",
     "containerId": "",
     "name": "http://localhost/boat-api/api/boat/destaques",
-    "url": "http://localhost/boat-api/api/boat/destaques",
+    "url": "http://localhost/boat-api/api/praia/select-all",
     "method": "GET",
     "sortNum": 0,
     "created": "2022-06-14T20:45:09.308Z",
-    "modified": "2022-06-14T20:50:14.663Z",
+    "modified": "2022-06-15T18:43:46.617Z",
     "headers": [],
     "params": [],
     "tests": []
