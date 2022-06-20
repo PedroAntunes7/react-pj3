@@ -1,4 +1,4 @@
-import barco from "../assets/img/barco.jpg"
+// import barco from "../assets/img/barco.jpg"
 import "./Cardhome.css"
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom"
@@ -19,7 +19,7 @@ return(
       boats.map((boat) => {
         return (
           <div key={boat.id } className="card mx-3">
-           <Link to={"/Barco/"+boat.id}>
+            <Link to={"/SoloBoat/"+boat.id}>
             <img className="barco" src={boat.img} alt={boat.name}/>
             <h1 className="name nameboats">{boat.name}</h1>
            </Link>
