@@ -13,6 +13,10 @@ import AuthProvider from './providers/authProvider'
 import Login from './components/Login';
 import Jets from './components/Jets'
 import SoloBoat from './components/SoloBoat';
+import SoloPraia from './components/SoloPraia';
+import SoloJet from './components/SoloJet';
+import Admin from './components/Admin';
+
 
 
 
@@ -28,13 +32,15 @@ function App() {
                 <Route path="Praia" element={<Praias />} />
                 <Route path="Contatos" element={<Contatos />} />
                 <Route path="SoloBoat/:boatId" element={<SoloBoat />} />
+                <Route path="SoloPraia/:praiaId" element={<SoloPraia />} />
+                <Route path="SoloJet/:jetId" element={<SoloJet />} />
+                <Route path="admin/" element={<Admin/>} />
               </Route>
 
-              <Route path='admin/login' element={<Login />} />
-              <Route path='admin/' element={<LayoutDashboard />}>
+              {/* { <Route path='admin/login' element={<Login />} />
+              <Route path='admin/' element={<LayoutDashboard />}> }
                     <Route index element={<APIIntegration />}/>
-                    <Route path="edit/:userId" element={<EditUserOnChange />} />
-              </Route>
+                    <Route path="edit/:userId" element={<EditUserOnChange />} /> */}
 
               <Route path="*" element={<NotFound />} />
             </Routes>

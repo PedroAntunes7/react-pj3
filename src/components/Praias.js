@@ -4,12 +4,12 @@ import "./Cardhome.css";
 
 
 const Praias = () => {
-  const [praias, setPraias] = useState(null);
+  const [praia, setPraia] = useState(null);
 
 useEffect(() => {
     fetch("http://localhost/boat-api/api/praia/select-all")
         .then((response) => response.json())
-        .then((data) => setPraias(data));
+        .then((data) => setPraia(data));
 }, []);
 
 return(
@@ -18,15 +18,15 @@ return(
            <h1 className='title'>Praias</h1> 
          </div>
   <div className="lista col-12 d-flex">
-    {praias &&
-      praias.map((praias) => {
+    {praia &&
+      praia.map((praia) => {
         return (
-          <div key={praias.id } className="card mx-3">
-           <Link to={"/Barco/"+praias.id}>
-            <img className="barco" src={praias.foto} alt={praias.nome}/>
-            <h1 className="name nameboats">{praias.nome}</h1>
+          <div key={praia.id } className="card mx-3">
+           <Link to={"/SoloPraia/"+praia.id}>
+            <img className="Praia" src={praia.foto} alt={praia.nome}/>
+            <h1 className="name namepraia">{praia.nome}</h1>
            </Link>
-            <p className="price">({praias.local})</p>
+            <p className="local">{praia.local}</p>
           </div>
         )
       })

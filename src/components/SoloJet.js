@@ -3,29 +3,29 @@ import { useEffect, useState } from "react";
 import { useParams } from 'react-router-dom'
 import './Soloboat.css'
 
-const SoloBoat = () =>{
-    const {boatId} = useParams()
-    const [boat, setBoat] = useState();
+const SoloJet = () =>{
+    const {jetId} = useParams()
+    const [jet, setJet] = useState();
 
     useEffect(() =>{
-        fetch("http://localhost/boat-api/api/boat/select-by-id/?id="+boatId)
+        fetch("http://localhost/boat-api/api/jet/select-by-id/?id="+jetId)
         .then((response) => response.json())
         .then((data) => 
-        setBoat(data)
+        setJet(data)
       )
 
-    }, [boatId])    
+    }, [jetId])    
 
     return(
         <>
-        {boat && (
+        {jet && (
               <>
-              <div key={boat.id}>
+              <div key={jet.id}>
           <div className="d-flex justify-content-center my-3 ">
-           <h1 className='title'>{boat.name}</h1> 
+           <h1 className='title'>{jet.name}</h1> 
            </div>
               <div className='img'>
-                <img src={boat.img} className="w-50 adjust-img"/>
+                <img src={jet.img} className="w-50 adjust-img"/>
                 </div>
 
                 <div className='row card flex-row'>
@@ -33,43 +33,33 @@ const SoloBoat = () =>{
 
                 <div className="col-6 price d-flex align-items-center py-1">
                 <h3>Preço: </h3>
-                <h5 className='adjust'>{boat.price}</h5>
+                <h5 className='adjust'>{jet.price}</h5>
                 </div>
 
                 <div className='col-6 type d-flex align-items-center py-1'>
                 <h3>Tipo: </h3>
-                <h5 className='adjust'>{boat.tipo}</h5>
+                <h5 className='adjust'>{jet.tipo}</h5>
                 </div>
 
 
                 <div className='col-6 state d-flex align-items-center py-1'>
                 <h3>Estado: </h3>
-                <h5 className='adjust'>{boat.estado}</h5>
+                <h5 className='adjust'>{jet.estado}</h5>
                 </div>
 
                 <div className='col-6 fab d-flex align-items-center py-1'>
                 <h3>Ano De Fabricação: </h3>
-                <h5 className='adjust'>{boat.ano_fab}</h5>
-                </div>
-
-                <div className='col-6 tam d-flex align-items-center py-1'>
-                <h3>Tamanho: </h3>
-                <h5 className='adjust'>{boat.tamanho}</h5>
-                </div>
-
-                <div className='col-6 trip d-flex align-items-center py-1'>
-                <h3>Tripulação: </h3>
-                <h5 className='adjust'>{boat.trip}</h5>
+                <h5 className='adjust'>{jet.ano_fab}</h5>
                 </div>
 
                 <div className='col-6 loc d-flex align-items-center py-1'>
                 <h3>Local: </h3>
-                <h5 className='adjust'>{boat.local}</h5>
+                <h5 className='adjust'>{jet.local}</h5>
                 </div>
 
                 <div className='col-6 comb d-flex align-items-center py-1'>
                 <h3>Combustivel: </h3>
-                <h5 className='adjust'>{boat.comb}</h5>
+                <h5 className='adjust'>{jet.comb}</h5>
                 </div>
                 </div>
 
@@ -82,4 +72,4 @@ const SoloBoat = () =>{
           
   
   
-            export default SoloBoat;
+            export default SoloJet;

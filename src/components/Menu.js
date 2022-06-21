@@ -50,15 +50,6 @@ const Menu = () => {
         </li>
         <li class="nav-item">
           <NavLink to="Contatos" style={{margin: '0 0 0 10px'}} class="nav-link">Contatos</NavLink>
-          { isLogged 
-          ? (
-            <>
-                <span>Logado como: {userLogged.email}</span> 
-                <button onClick={logout}>Sair</button>
-              </>
-          )
-          : (<span><Link to="admin/login">Login Admin</Link></span>)
-        }
         </li>
       </ul>
     </div>

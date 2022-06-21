@@ -160,13 +160,28 @@
     "colId": "history",
     "containerId": "",
     "name": "http://localhost/boat-api/api/boat/select-all",
-    "url": "http://localhost/boat-api/api/boat/select-all",
-    "method": "GET",
+    "url": "http://localhost/boat-api/api/boat/delete",
+    "method": "POST",
     "sortNum": 0,
     "created": "2022-06-14T20:45:02.120Z",
-    "modified": "2022-06-14T20:45:02.664Z",
-    "headers": [],
+    "modified": "2022-06-21T20:35:56.081Z",
+    "headers": [
+      {
+        "name": "Access-Token",
+        "value": "5e1afe787db7ed462895aca5badc7315"
+      }
+    ],
     "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "id",
+          "value": "16"
+        }
+      ]
+    },
     "tests": []
   },
   {
