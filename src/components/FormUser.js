@@ -17,7 +17,7 @@ const FormUser = ({boats, setBoats}) => {
     formData.append('price', event.target[1].value);
     formData.append('img', event.target[2].value);
     fetch(
-      "http://localhost/lp2/api/boat/create",
+      "http://localhost/boat-api/api/boat/create",
       {method: 'POST', body: formData}
       )
       .then((response) => response.json())

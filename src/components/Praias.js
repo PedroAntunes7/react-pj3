@@ -22,7 +22,7 @@ return(
       praia.map((praia) => {
         return (
           <div key={praia.id } className="card mx-3">
-           <Link to={"/SoloPraia/"+praia.id}>
+           <Link to={"/solopraia/"+praia.id}>
             <img className="Praia" src={praia.foto} alt={praia.nome}/>
             <h1 className="name namepraia">{praia.nome}</h1>
            </Link>

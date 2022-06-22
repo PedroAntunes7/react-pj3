@@ -16,6 +16,12 @@ import SoloBoat from './components/SoloBoat';
 import SoloPraia from './components/SoloPraia';
 import SoloJet from './components/SoloJet';
 import Admin from './components/Admin';
+import EditBoat from './components/EditBoat';
+import DeleteBoat from './components/DeleteBoat';
+import AdminBoat from './components/AdminBoat'
+import AdminJet from './components/Adminjet';
+import AdminPraia from './components/AdminPraia';
+import EditJet from './components/EditJet';
 
 
 
@@ -27,14 +33,20 @@ function App() {
             <Routes>
               <Route path="/" element={<LayoutDefault />}>
                 <Route index element={<ExemploContexto/>} />
-                <Route path="Barcos" element={<Barcos />} />
-                <Route path="Jets" element={<Jets />} />
-                <Route path="Praia" element={<Praias />} />
-                <Route path="Contatos" element={<Contatos />} />
-                <Route path="SoloBoat/:boatId" element={<SoloBoat />} />
-                <Route path="SoloPraia/:praiaId" element={<SoloPraia />} />
-                <Route path="SoloJet/:jetId" element={<SoloJet />} />
+                <Route path="barcos" element={<Barcos />} />
+                <Route path="jets" element={<Jets />} />
+                <Route path="praia" element={<Praias />} />
+                <Route path="contatos" element={<Contatos />} />
+                <Route path="soloboat/:boatId" element={<SoloBoat />} />
+                <Route path="solopraia/:praiaId" element={<SoloPraia />} />
+                <Route path="solojet/:jetId" element={<SoloJet />} />
                 <Route path="admin/" element={<Admin/>} />
+                <Route path="adminboat/" element={<AdminBoat />} />
+                <Route path="adminjet/" element={<AdminJet />} />
+                <Route path="adminpraia/" element={<AdminPraia />} />
+                <Route path="/editboat/:boatId" element={<EditBoat />} />
+                <Route path="/editjet/:jetId" element={<EditJet />} />
+                <Route path="/deleteboat/:boatId" element={<DeleteBoat />} />
               </Route>
 
               {/* { <Route path='admin/login' element={<Login />} />

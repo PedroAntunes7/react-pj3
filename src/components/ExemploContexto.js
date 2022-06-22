@@ -17,7 +17,7 @@ const ExemploContexto = () => {
   }, [])    
     return (
       <>
-      <img src={Imgmain} />
+      <img className='backgroundimage' src={Imgmain} />
       <div  className='textocards'>
       <h1>Ofertas Semanais</h1>
       </div>

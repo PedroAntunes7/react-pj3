@@ -22,7 +22,7 @@ return(
       jet.map((jet) => {
         return (
           <div key={jet.id} className="col-3 card m-2">
-           <Link to={"/SoloJet/"+jet.id}>
+           <Link to={"/solojet/"+jet.id}>
             <img className="jet" src={jet.img} alt={jet.name} className="w-100"/>
             <h1 className="name nameboats">{jet.name}</h1>
            </Link>

@@ -15,18 +15,18 @@ const Footer = () => {
             </p>
           </MDBCol>
           <MDBCol md="6">
-            <h5 className="title">Links</h5>
+            <h5 className="title">Atalhos</h5>
             <ul>
-              <li className="list-unstyled">
-                <a href="#!">Link 1</a>
+              <li className="list-unstyled a">
+                <a href="#">Quem Somos</a>
               </li>
-              <li className="list-unstyled">
+              <li className="list-unstyled a">
                 <a href="#!">Link 2</a>
               </li>
-              <li className="list-unstyled">
+              <li className="list-unstyled a">
                 <a href="#!">Link 3</a>
               </li>
-              <li className="list-unstyled">
+              <li className="list-unstyled a">
                 <a href="#!">Link 4</a>
               </li>
             </ul>

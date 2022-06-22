@@ -1,80 +1,27 @@
-import './Barcos.css'
-import "./Cardhome.css"
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom"
-import { BsFillTrashFill } from "react-icons/bs"
-import { AiFillEdit } from "react-icons/ai"
-                    
-
-
+import './Admin.css'
 
 const Admin = () => {
-  const [boat, setBoats] = useState(null);
-
-useEffect(() => {
-    fetch("http://localhost/boat-api/api/boat/select-All")
-        .then((response) => response.json())
-        .then((data) => setBoats(data));
-}, []);
-
-const handleTrashClick = (boatId) => {
-    const formData = new FormData();
-    formData.append('id', boatId);
-    const urlDelete = "http://localhost/boat-api/api/boat/delete";
-    fetch(urlDelete, {
-      method: 'POST',
-      body: formData
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        alert(data.message)
-        const boatFiltered = boat.filter((boat) => { return boat.id !== boatId });
-        setBoats(boatFiltered)
-      });
-  }
-
-return(
-  <>
-  
-  <div className="lista row d-flex justify-content-center titulo" >
-    {boat &&
-      boat.map((boat) => {
-        return (
-          <div key={boat.id} className="col-3 card m-2">
-           <Link to={"/SoloBoat/"+boat.id}>
-            <img className="barco" src={boat.img} alt={boat.name} className="w-100"/>
-            <h1 className="name nameboats">{boat.name}</h1>
-           </Link>
-            <p className="price">({boat.price})</p>
-          </div>
-        )
-      })
-    }
-    </div>
+  return(
     <>
-    <FormUser setBoats={setBoats} boat={boat}/>
-    {boat &&
-      boat.map((boat) => {
-        return (
-          <div key={boat.id}>
-            <h1>{boat.name}</h1>
-            <p>{boat.email}</p>
-            <BsFillTrashFill
-              onClick={() => handleTrashClick(boat.id)}
-              style={{cursor: 'pointer'}}
-            />
-            <AiFillEdit 
-              onClick={() => navigate('edit/'+boat.id)} 
-              style={{cursor: 'pointer'}}
-            />
-          </div>
-        )
-      })
-    }
-    </>
-  </>
-)
-  }
+   <Link className="Card" to={"/adminboat/"}> 
+   <div className="ajuste">
+   <img src="https://images.tcdn.com.br/img/img_prod/747051/passeio_de_barco_tradicional_7_1_20200323183146.jpg" />
+   </div>
+</Link>
 
-  
- export default Admin
+<Link className="Card" to={"/adminjet/"}> 
+   <div className="ajuste">
+   <img src="https://cdn.paytour.com.br/assets/images/passeios-1000345/9ec50c71792c304bbb8d68b7838fa17c/jet1.png" />
+   </div>
+</Link>
+
+<Link className="Card" to={"/adminpraia/"}> 
+   <div className="ajuste">
+   <img src="https://bostonmais.com/wp-content/uploads/2021/02/Melhores-praias-de-Massachusetts.jpg" />
+   </div>
+</Link>
+    </>
+  )}
+   
+   export default Admin
