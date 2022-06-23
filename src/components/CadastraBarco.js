@@ -16,7 +16,7 @@ const CadastraBarco = () => {
   const { userLogged } = useAuth();
 
   useEffect(() => {
-    tituloRef.current.focus()
+    nameRef.current.focus()
   },[])
 
   const handleSubmit = (event) => {

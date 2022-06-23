@@ -36,7 +36,7 @@ return(
               </Link>
             </div>
             <div>
-            <Link className='btn btn-primary' to={"/deleteboat/"+jet.id}> 
+            <Link className='btn btn-primary' to={"/deletejet/"+jet.id}> 
               Deletar
             </Link>
             </div>

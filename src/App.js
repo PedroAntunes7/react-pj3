@@ -22,6 +22,10 @@ import AdminBoat from './components/AdminBoat'
 import AdminJet from './components/Adminjet';
 import AdminPraia from './components/AdminPraia';
 import EditJet from './components/EditJet';
+import DeleteJet from './components/DeleteJet';
+import EditPraia from './components/EditPraia';
+import DeletePraia from './components/DeletePraia';
+import CadastraBarco from './components/CadastraBarco';
 
 
 
@@ -37,16 +41,20 @@ function App() {
                 <Route path="jets" element={<Jets />} />
                 <Route path="praia" element={<Praias />} />
                 <Route path="contatos" element={<Contatos />} />
-                <Route path="soloboat/:boatId" element={<SoloBoat />} />
-                <Route path="solopraia/:praiaId" element={<SoloPraia />} />
-                <Route path="solojet/:jetId" element={<SoloJet />} />
-                <Route path="admin/" element={<Admin/>} />
-                <Route path="adminboat/" element={<AdminBoat />} />
-                <Route path="adminjet/" element={<AdminJet />} />
-                <Route path="adminpraia/" element={<AdminPraia />} />
-                <Route path="/editboat/:boatId" element={<EditBoat />} />
-                <Route path="/editjet/:jetId" element={<EditJet />} />
+                <Route path="soloboat/:boatId"    element={<SoloBoat />} />
+                <Route path="solopraia/:praiaId"  element={<SoloPraia />} />
+                <Route path="solojet/:jetId"      element={<SoloJet />} />
+                <Route path="admin/"              element={<Admin/>} />
+                <Route path="adminboat/"          element={<AdminBoat />} />
+                <Route path="adminjet/"           element={<AdminJet />} />
+                <Route path="adminpraia/"         element={<AdminPraia />} />
+                <Route path="/editboat/:boatId"   element={<EditBoat />} />
+                <Route path="/editjet/:jetId"     element={<EditJet />} />
+                <Route path="/editpraia/:praiaId" element={<EditPraia />} />
                 <Route path="/deleteboat/:boatId" element={<DeleteBoat />} />
+                <Route path="/deletejet/:jetId"   element={<DeleteJet />} />
+                <Route path="/deletepraia/:praiaId"   element={<DeletePraia />} />
+                <Route path="/cadastrabarco/"   element={<CadastraBarco />} />
               </Route>
 
               {/* { <Route path='admin/login' element={<Login />} />
