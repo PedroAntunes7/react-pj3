@@ -128,11 +128,11 @@
     "colId": "history",
     "containerId": "",
     "name": "http://localhost/lp2/api/boat/update",
-    "url": "http://localhost/lp2/api/boat/update",
+    "url": "http://localhost/boat-api/api/boat/cadastrabarco",
     "method": "POST",
     "sortNum": 0,
     "created": "2022-06-06T19:52:24.004Z",
-    "modified": "2022-06-06T19:52:24.901Z",
+    "modified": "2022-06-24T17:38:02.523Z",
     "headers": [],
     "params": [],
     "body": {

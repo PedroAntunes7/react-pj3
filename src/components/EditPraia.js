@@ -27,8 +27,8 @@ const EditPraia = () => {
         formData.append('id', praiaId)
         formData.append('foto', event.target[0].value)
         formData.append('nome', event.target[1].value)
-        formData.append('local', event.target[8].value);
-        formData.append('descricao', event.target[9].value);
+        formData.append('local', event.target[2].value);
+        formData.append('descricao', event.target[3].value);
         fetch(
             "http://localhost/boat-api/api/praia/update",
             {method: 'POST', body: formData,

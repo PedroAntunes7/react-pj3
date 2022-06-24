@@ -22,7 +22,9 @@ const SoloBoat = () =>{
               <>
               <div key={boat.id}>
           <div className="d-flex justify-content-center my-3 ">
+            <div className='linha'>
            <h1 className='title'>{boat.name}</h1> 
+            </div>
            </div>
               <div className='img'>
                 <img src={boat.img} className="w-50 adjust-img"/>

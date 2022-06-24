@@ -26,6 +26,9 @@ import DeleteJet from './components/DeleteJet';
 import EditPraia from './components/EditPraia';
 import DeletePraia from './components/DeletePraia';
 import CadastraBarco from './components/CadastraBarco';
+import LayoutDefaultAdmin from './pages/LayoutDefaultAdmin';
+import CadastraPraia from './components/CadastraPraia';
+import CadastraJet from './components/CadastraJet';
 
 
 
@@ -44,6 +47,8 @@ function App() {
                 <Route path="soloboat/:boatId"    element={<SoloBoat />} />
                 <Route path="solopraia/:praiaId"  element={<SoloPraia />} />
                 <Route path="solojet/:jetId"      element={<SoloJet />} />
+              </Route>
+            <Route path="/" element={<LayoutDefaultAdmin />}>
                 <Route path="admin/"              element={<Admin/>} />
                 <Route path="adminboat/"          element={<AdminBoat />} />
                 <Route path="adminjet/"           element={<AdminJet />} />
@@ -55,7 +60,9 @@ function App() {
                 <Route path="/deletejet/:jetId"   element={<DeleteJet />} />
                 <Route path="/deletepraia/:praiaId"   element={<DeletePraia />} />
                 <Route path="/cadastrabarco/"   element={<CadastraBarco />} />
-              </Route>
+                <Route path="/cadastrapraia/"   element={<CadastraPraia />} />
+                <Route path="/cadastrajet/"   element={<CadastraJet />} />
+              </Route >
 
               {/* { <Route path='admin/login' element={<Login />} />
               <Route path='admin/' element={<LayoutDashboard />}> }

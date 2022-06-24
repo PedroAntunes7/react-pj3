@@ -15,7 +15,9 @@ useEffect(() => {
 
 return(
   <>
-  
+    <div className="d-flex justify-content-center my-3">
+           <h1 className='title'>Barcos à Venda</h1> 
+  </div>
   <div className="lista row d-flex justify-content-center titulo" >
     {boats &&
       boats.map((boat) => {
@@ -25,7 +27,7 @@ return(
             <img className="barco" src={boat.img} alt={boat.name} className="w-100"/>
             <h1 className="name nameboats">{boat.name}</h1>
            </Link>
-            <p className="price">({boat.price})</p>
+            <p className="price">{boat.price}</p>
           </div>
         )
       })

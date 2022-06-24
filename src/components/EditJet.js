@@ -35,8 +35,8 @@ const EditJet = () => {
         formData.append('tipo', event.target[3].value);
         formData.append('estado', event.target[4].value);
         formData.append('ano_fab', event.target[5].value);
-        formData.append('local', event.target[8].value);
-        formData.append('comb', event.target[9].value);
+        formData.append('local', event.target[6].value);
+        formData.append('comb', event.target[7].value);
         fetch(
             "http://localhost/boat-api/api/jet/update",
             {method: 'POST', body: formData,

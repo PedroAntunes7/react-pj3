@@ -18,7 +18,7 @@ const ExemploContexto = () => {
     return (
       <>
       <img className='backgroundimage' src={Imgmain} />
-      <div  className='textocards'>
+      <div className=' d-flex justify-content-center'>
       <h1>Ofertas Semanais</h1>
       </div>
       <Cardhome />

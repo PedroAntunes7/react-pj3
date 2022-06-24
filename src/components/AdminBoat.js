@@ -29,7 +29,7 @@ return(
             <img className="barco" src={boat.img} alt={boat.name} className="w-100"/>
             <h1 className="name nameboats">{boat.name}</h1>
            </Link>
-            <p className="price">({boat.price})</p>
+            <p className="price">{boat.price}</p>
             <div>
               <Link className='btn btn-primary' to={"/editboat/"+boat.id}> 
               Editar

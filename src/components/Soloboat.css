@@ -6,3 +6,9 @@
     border-radius: 20px;
     padding: 0 0 1% 0;
 }
+
+.linha{
+    padding: 5px 0 ;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}

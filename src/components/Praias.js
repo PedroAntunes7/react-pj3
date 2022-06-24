@@ -16,8 +16,8 @@ return(
 <>
 <div className="d-flex justify-content-center my-3">
            <h1 className='title'>Praias</h1> 
-         </div>
-  <div className="lista col-12 d-flex">
+  </div>
+  <div className="lista col-12 d-flex titulo py-2">
     {praia &&
       praia.map((praia) => {
         return (

@@ -39,6 +39,20 @@ const Admin = () => {
    </div>
 </Link>
        </Col>
+       <Col className="col-4 d-flex flex-column align-items-center">
+<Link className="Card" to={"/cadastrajet/"}> 
+   <div className="ajuste">
+<h1>Cadastra Jet</h1>
+   </div>
+</Link>
+       </Col>
+       <Col className="col-4 d-flex flex-column align-items-center">
+<Link className="Card" to={"/cadastrapraia/"}> 
+   <div className="ajuste">
+<h1>Cadastra Praia</h1>
+   </div>
+</Link>
+       </Col>
     </Row>
     </>
   )}

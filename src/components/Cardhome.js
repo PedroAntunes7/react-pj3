@@ -18,12 +18,12 @@ return(
     {boats &&
       boats.map((boat) => {
         return (
-          <div key={boat.id } className="card mx-3">
+          <div key={boat.id } className=" card col-3 mx-3 d-flex flex-wrap text-center">
             <Link to={"/SoloBoat/"+boat.id}>
             <img className="barco" src={boat.img} alt={boat.name}/>
             <h1 className="name nameboats">{boat.name}</h1>
+            <p className="price">{boat.price}</p>
            </Link>
-            <p className="price">({boat.price})</p>
           </div>
         )
       })

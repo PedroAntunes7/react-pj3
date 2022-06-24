@@ -35,3 +35,5 @@ img{
 .titulo{
     border-top: 2px solid black;
 }
+
+.d-flex{justify-content: center;}

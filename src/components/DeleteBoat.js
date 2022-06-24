@@ -42,6 +42,7 @@ const DeleteBoat = () => {
             <Row className="justify-content-center my-3">
               <Col xs={12}>
                 <img src={boat.img} className="w-50"/>
+                
                 <h1 className='title'>{boat.name}</h1> 
               </Col>
               <Col xs="auto">

@@ -1,7 +1,7 @@
 import { useRef, useEffect} from 'react'
 import { useAuth } from '../providers/authProvider';
 
-const CadastraBarco = () => {
+const CadastraJet = () => {
 
   const imgRef = useRef();
   const nameRef = useRef();
@@ -9,8 +9,6 @@ const CadastraBarco = () => {
   const tipoRef = useRef();
   const estadoRef = useRef();
   const ano_fabRef = useRef();
-  const tamanhoRef = useRef();
-  const tripRef = useRef();
   const localRef = useRef();
   const combRef = useRef();
   const { userLogged } = useAuth();
@@ -28,12 +26,10 @@ const CadastraBarco = () => {
     formData.append('tipo', event.target[3].value);
     formData.append('estado', event.target[4].value);
     formData.append('ano_fab', event.target[5].value);
-    formData.append('tamanho', event.target[6].value);
-    formData.append('trip', event.target[7].value);
-    formData.append('local', event.target[8].value);
-    formData.append('comb', event.target[9].value);
+    formData.append('local', event.target[6].value);
+    formData.append('comb', event.target[7].value);
     
-    fetch("http://localhost/boat-api/api/boat/create", {
+    fetch("http://localhost/boat-api/api/jet/create", {
         method: 'POST',
         body: formData,
         headers: {
@@ -48,8 +44,6 @@ const CadastraBarco = () => {
         tipoRef.current.value = ''
         estadoRef.current.value = ''
         ano_fabRef.current.value = ''
-        tamanhoRef.current.value = ''
-        tripRef.current.value = ''
         localRef.current.value = ''
         combRef.current.value = ''
         console.log(data)
@@ -60,7 +54,7 @@ const CadastraBarco = () => {
 
   return (
     <>
-    <h1>Cadastra Barco</h1>
+    <h1>Cadastra Jet</h1>
     <form onSubmit={(event) => handleSubmit(event)}>
       <label>Imagem:</label><input ref={imgRef} type="text" name="img"/>
       <label>Nome:</label><input ref={nameRef } type="text" name="name"/>
@@ -68,8 +62,6 @@ const CadastraBarco = () => {
       <label>Tipo:</label><input ref={tipoRef} type="text" name="tipo"/>
       <label>Estado:</label><input ref={estadoRef} type="text" name="estado"/>
       <label>Ano De Fabricação:</label><input ref={ano_fabRef} type="text" name="ano_fab"/>
-      <label>Tamanho:</label><input ref={tamanhoRef} type="text" name="tamanho"/>
-      <label>Tripulação:</label><input ref={tripRef} type="text" name="trip"/>
       <label>Local:</label><input ref={localRef} type="text" name="local"/>
       <label>Combustivel:</label><input ref={combRef} type="text" name="comb"/>
       
@@ -80,4 +72,4 @@ const CadastraBarco = () => {
   )
 }
 
-export default CadastraBarco
+export default CadastraJet
