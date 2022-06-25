@@ -1,8 +1,11 @@
 .colorfooter {
-    background-color: #005A8D;
+  background-color: #005a8d;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
+}
 
+.row {
+  justify-content: space-evenly;
 }
