@@ -26,17 +26,17 @@ return(
         return (
           <div key={boat.id} className="col-3 card m-2">
            <Link to={"/soloboat/"+boat.id}>
-            <img className="barco" src={boat.img} alt={boat.name} className="w-100"/>
+            <img className="barco" src={boat.img} alt={boat.name} className="w-100 p-2"/>
             <h1 className="name nameboats">{boat.name}</h1>
            </Link>
             <p className="price">{boat.price}</p>
             <div>
-              <Link className='btn btn-primary' to={"/editboat/"+boat.id}> 
+              <Link className='btn btn-primary my-1' to={"/editboat/"+boat.id}> 
               Editar
               </Link>
             </div>
             <div>
-            <Link className='btn btn-primary' to={"/deleteboat/"+boat.id}> 
+            <Link className='btn btn-danger my-1' to={"/deleteboat/"+boat.id}> 
               Deletar
             </Link>
             </div>

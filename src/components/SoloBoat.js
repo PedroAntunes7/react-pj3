@@ -16,6 +16,9 @@ const SoloBoat = () =>{
 
     }, [boatId])    
 
+
+  
+
     return(
         <>
         {boat && (
@@ -26,7 +29,7 @@ const SoloBoat = () =>{
            <h1 className='title'>{boat.name}</h1> 
             </div>
            </div>
-              <div className='img'>
+              <div className='img d-flex'>
                 <img src={boat.img} className="w-50 adjust-img"/>
                 </div>
 

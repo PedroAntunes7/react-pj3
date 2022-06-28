@@ -1,5 +1,6 @@
 import { useRef, useEffect} from 'react'
 import { useAuth } from '../providers/authProvider';
+import { Row, Col } from "react-bootstrap";
 
 const CadastraPraia = () => {
 
@@ -41,14 +42,26 @@ const CadastraPraia = () => {
 
   return (
     <>
-    <h1>Cadastra Praia</h1>
-    <form onSubmit={(event) => handleSubmit(event)}>
-      <label>Imagem:</label><input ref={fotoRef} type="text" name="img"/>
-      <label>Nome:</label><input ref={nomeRef } type="text" name="name"/>
-      <label>Local:</label><input ref={localRef} type="text" name="price"/>
-      <label>Descrição:</label><input ref={descricaoRef} type="text" name="tipo"/>
-      <input type="submit" value="Cadastrar" />
-    </form>
+            <Col className='d-flex'>
+            <form onSubmit={(event) => handleSubmit(event)}>
+                <Col className='col-1'>
+                <label>descricao:</label><input ref={descricaoRef} type="text" name="descricao"/><br />
+                </Col>
+                <Col className='col-1'>
+                <label>Local:</label><input ref={localRef} type="text" name="local"/><br />   
+                </Col>
+                <Col className='col-1'>    
+                <label>Nome:  </label><input ref={nomeRef } type="text" name="nome"/><br />
+                </Col>
+                <Col className='col-1'>   
+                <label>Imagem:</label><input ref={fotoRef} type="text" name="foto"/><br />
+                </Col>
+                <Col className='col-1 py-2'>   
+                <input type="submit" value="Editar"  className='bg-primary' />
+                </Col>
+
+            </form>
+            </Col>
     </>
 
   )

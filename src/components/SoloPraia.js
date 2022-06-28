@@ -24,7 +24,7 @@ const SoloPraia = () =>{
            <h1 className='title'>{praia.nome}</h1> 
            </div>
 
-              <div className='foto'>
+              <div className='foto d-flex'>
                 <img src={praia.foto} className="w-50 adjust-img"/>
                 </div>
 

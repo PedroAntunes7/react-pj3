@@ -1,5 +1,7 @@
 import { useRef, useEffect} from 'react'
 import { useAuth } from '../providers/authProvider';
+import { Row, Col } from "react-bootstrap";
+
 
 const CadastraBarco = () => {
 
@@ -18,6 +20,7 @@ const CadastraBarco = () => {
   useEffect(() => {
     nameRef.current.focus()
   },[])
+
 
   const handleSubmit = (event) => {
     event.preventDefault()
@@ -58,23 +61,28 @@ const CadastraBarco = () => {
   } 
 
 
+
+
   return (
     <>
-    <h1>Cadastra Barco</h1>
+    <Row>
+            <Col className="d-flex">
+
     <form onSubmit={(event) => handleSubmit(event)}>
-      <label>Imagem:</label><input ref={imgRef} type="text" name="img"/>
-      <label>Nome:</label><input ref={nameRef } type="text" name="name"/>
-      <label>Preço:</label><input ref={priceRef} type="text" name="price"/>
-      <label>Tipo:</label><input ref={tipoRef} type="text" name="tipo"/>
-      <label>Estado:</label><input ref={estadoRef} type="text" name="estado"/>
-      <label>Ano De Fabricação:</label><input ref={ano_fabRef} type="text" name="ano_fab"/>
-      <label>Tamanho:</label><input ref={tamanhoRef} type="text" name="tamanho"/>
-      <label>Tripulação:</label><input ref={tripRef} type="text" name="trip"/>
-      <label>Local:</label><input ref={localRef} type="text" name="local"/>
-      <label>Combustivel:</label><input ref={combRef} type="text" name="comb"/>
-      
-      <input type="submit" value="Cadastrar" />
+    <Col className='col-1'><label>Imagem:</label><input ref={imgRef} type="text" name="img"/></Col>
+    <Col className='col-1'><label>Nome:</label><input ref={nameRef } type="text" name="name"/></Col>
+    <Col className='col-1'><label>Preço:</label><input ref={priceRef} type="text" name="price"/></Col>
+    <Col className='col-1'><label>Tipo:</label><input ref={tipoRef} type="text" name="tipo"/></Col>
+    <Col className='col-1'><label>Estado:</label><input ref={estadoRef} type="text" name="estado"/></Col>
+    <Col className='col-1'><label>Ano De Fabricação:</label><input ref={ano_fabRef} type="text" name="ano_fab"/></Col>
+    <Col className='col-1'><label>Tamanho:</label><input ref={tamanhoRef} type="text" name="tamanho"/></Col>
+    <Col className='col-1'><label>Tripulação:</label><input ref={tripRef} type="text" name="trip"/><br /></Col>
+    <Col className='col-1'><label>Local:</label><input ref={localRef} type="text" name="local"/><br /></Col>
+    <Col className='col-1'><label>Combustivel:</label><input ref={combRef} type="text" name="comb"/><br /></Col>
+    <Col className='col-1 py-2'><input type="submit" value="Cadastrar" className='bg-primary' /></Col> 
     </form>
+    </Col>
+    </Row>
     </>
 
   )

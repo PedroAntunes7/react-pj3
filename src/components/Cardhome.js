@@ -14,13 +14,13 @@ useEffect(() => {
 }, []);
 
 return(
-  <div className="lista col-12 d-flex">
+  <div className="lista row d-flex justify-content-center titulo text-center">
     {boats &&
       boats.map((boat) => {
         return (
-          <div key={boat.id } className=" card col-3 mx-3 d-flex flex-wrap text-center">
+          <div key={boat.id } className=" col-3 card m-2 cor">
             <Link to={"/SoloBoat/"+boat.id}>
-            <img className="barco" src={boat.img} alt={boat.name}/>
+            <img className="barco" src={boat.img} alt={boat.name} className="w-100 p-2"></img>
             <h1 className="name nameboats">{boat.name}</h1>
             <p className="price">{boat.price}</p>
            </Link>

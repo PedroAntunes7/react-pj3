@@ -24,7 +24,7 @@ const SoloJet = () =>{
           <div className="d-flex justify-content-center my-3 ">
            <h1 className='title'>{jet.name}</h1> 
            </div>
-              <div className='img'>
+              <div className='img d-flex'>
                 <img src={jet.img} className="w-50 adjust-img"/>
                 </div>
 

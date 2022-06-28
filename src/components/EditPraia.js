@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { useRef } from 'react'
 import { useAuth } from '../providers/authProvider';
+import { Row, Col } from "react-bootstrap";
 
 const EditPraia = () => {
     const { userLogged } = useAuth();
@@ -51,13 +52,26 @@ const EditPraia = () => {
     return (
         <>
         {praia ? (
+            <Col className='d-flex'>
             <form onSubmit={(event) => handleSubmit(event)}>
-                <label>Imagem:</label><input ref={fotoRef} type="text" name="foto"/><br />
-                <label>Nome:  </label><input ref={nomeRef } type="text" name="nome"/><br />
-                <label>Local:</label><input ref={localRef} type="text" name="local"/><br />
+                <Col className='col-1'>
                 <label>descricao:</label><input ref={descricaoRef} type="text" name="descricao"/><br />
+                </Col>
+                <Col className='col-1'>
+                <label>Local:</label><input ref={localRef} type="text" name="local"/><br />   
+                </Col>
+                <Col className='col-1'>    
+                <label>Nome:  </label><input ref={nomeRef } type="text" name="nome"/><br />
+                </Col>
+                <Col className='col-1'>   
+                <label>Imagem:</label><input ref={fotoRef} type="text" name="foto"/><br />
+                </Col>
+                <Col className='col-1'>   
                 <input type="submit" value="Editar" />
+                </Col>
+
             </form>
+            </Col>
             )
         : 
             (<p>Praia não encontrada!</p>)

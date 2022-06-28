@@ -80,13 +80,6 @@ const Menu = () => {
                 </Nav.Link>
                 <Nav.Link>
                   {" "}
-                  <NavLink
-                    to="Contatos"
-                    style={{ margin: "0 0 0 10px" }}
-                    class="nav-link"
-                  >
-                    Contatos
-                  </NavLink>
                 </Nav.Link>
               </Nav>
             </Navbar.Collapse>

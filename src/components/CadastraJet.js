@@ -1,5 +1,6 @@
 import { useRef, useEffect} from 'react'
 import { useAuth } from '../providers/authProvider';
+import { Row, Col } from "react-bootstrap";
 
 const CadastraJet = () => {
 
@@ -54,19 +55,21 @@ const CadastraJet = () => {
 
   return (
     <>
-    <h1>Cadastra Jet</h1>
-    <form onSubmit={(event) => handleSubmit(event)}>
-      <label>Imagem:</label><input ref={imgRef} type="text" name="img"/>
-      <label>Nome:</label><input ref={nameRef } type="text" name="name"/>
-      <label>Preço:</label><input ref={priceRef} type="text" name="price"/>
-      <label>Tipo:</label><input ref={tipoRef} type="text" name="tipo"/>
-      <label>Estado:</label><input ref={estadoRef} type="text" name="estado"/>
-      <label>Ano De Fabricação:</label><input ref={ano_fabRef} type="text" name="ano_fab"/>
-      <label>Local:</label><input ref={localRef} type="text" name="local"/>
-      <label>Combustivel:</label><input ref={combRef} type="text" name="comb"/>
-      
-      <input type="submit" value="Cadastrar" />
-    </form>
+    <Row>
+    <Col className='d-flex'>
+            <form onSubmit={(event) => handleSubmit(event)}>
+                <Col className='col-1'><label>Imagem:</label><input ref={imgRef} type="text" name="img"/></Col>
+                <Col className='col-1'><label>Nome:  </label><input ref={nameRef } type="text" name="name"/></Col>
+                <Col className='col-1'><label>Preço: </label><input ref={priceRef} type="text" name="price"/></Col>
+                <Col className='col-1'><label>Tipo:  </label><input ref={tipoRef} type="text" name="tipo"/></Col>
+                <Col className='col-1'><label>Estado:</label><input ref={estadoRef} type="text" name="estado"/></Col>
+                <Col className='col-1'><label>Ano De Fabricação:</label><input ref={ano_fabRef} type="text" name="ano_fab"/></Col>
+                <Col className='col-1'><label>Local:</label><input ref={localRef} type="text" name="local"/></Col>
+                <Col className='col-1'><label>Combustivel:</label><input ref={combRef} type="text" name="comb"/></Col>
+                <Col className='col-1 py-2'><input type="submit" value="Cadastrar" className='bg-primary' /></Col>  
+            </form>
+            </Col>
+          </Row>
     </>
 
   )

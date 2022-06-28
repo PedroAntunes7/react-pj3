@@ -17,13 +17,13 @@ return(
 <div className="d-flex justify-content-center my-3">
            <h1 className='title'>Praias</h1> 
   </div>
-  <div className="lista col-12 d-flex titulo py-2">
+  <div className="lista row d-flex justify-content-center titulo text-center">
     {praia &&
       praia.map((praia) => {
         return (
-          <div key={praia.id } className="card mx-3">
+          <div key={praia.id } className="col-3 card m-2">
            <Link to={"/solopraia/"+praia.id}>
-            <img className="Praia" src={praia.foto} alt={praia.nome}/>
+            <img className="Praia" src={praia.foto} alt={praia.nome} className="py-2"/>
             <h1 className="name namepraia">{praia.nome}</h1>
            </Link>
             <p className="local">{praia.local}</p>
